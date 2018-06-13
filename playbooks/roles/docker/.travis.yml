@@ -1,0 +1,16 @@
+---
+
+services: "docker"
+
+env:
+  - distro: "ubuntu1604"
+  - distro: "debian8"
+  - distro: "debian9"
+
+script:
+  # Download test shim.
+  - wget -O ${PWD}/tests/test.sh https://gist.githubusercontent.com/lodotek/c636c390dc3a2409c3383293f486ead9/raw/8a6b743d5174d165fdc5aa470225acb694ff6259/ansible-role-test.sh
+  - chmod +x ${PWD}/tests/test.sh
+
+  # Run tests.
+  - ${PWD}/tests/test.sh
