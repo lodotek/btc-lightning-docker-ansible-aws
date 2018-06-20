@@ -1,4 +1,7 @@
 playbooks/group_vars/all.yml
+inventory/hosts
+inventory/lightning
+
 *.retry
 _/
 
