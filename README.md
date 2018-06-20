@@ -19,7 +19,7 @@
 ## Misc
 * ansible -i inventory all -m ping
 * atom ~/.ssh/known_hosts
-* docker logs bitcoind_mainnet --tail "10"
+* docker logs lightning_bitcoind_1 --tail "10"
 
 ## Resources
 * https://cloud-images.ubuntu.com/locator/ec2/
